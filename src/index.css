@@ -1,0 +1,27 @@
+html {
+    font-size: 62.5%; /* 1rem = 10px, 62.5% of the default font size (16px) */
+  }
+  
+  @media (max-width: 998px) and (min-width: 768px) {
+    html {
+      font-size: 55%;
+    }
+    body{
+        padding: 10px;
+    }
+  }
+  
+  /* tablets */
+  @media (max-width: 768px) and (max-width: 480px) {
+    html {
+      font-size: 45%;
+    }
+  }
+  
+/* smart-phone */
+  @media (max-width: 480px) {
+    html {
+      font-size: 35%;
+    }
+  }
+  

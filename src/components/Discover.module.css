@@ -1,0 +1,130 @@
+.center {
+  display: flex;
+  flex-direction: column; /* child element set in column */
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem;
+  opacity: 0; /* Initially set the opacity to 0 */
+  animation: fadeIn 3s ease-in-out forwards; /* Apply the fade-in animation */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1; /* Fade in to full opacity */
+  }
+}
+
+.title {
+  font-size: 3.6rem;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.image1 {
+  flex: 1;
+  text-align: center;
+}
+
+.imgSize {
+  width: 50%;
+}
+
+.card1 {
+  flex: 1;
+  background-color: rgb(245, 245, 245);
+  text-align: left;
+  padding: 2rem;
+}
+
+.card1 h1 {
+  color: rgb(245, 195, 63);
+  font-size: 2rem;
+}
+
+.block {
+  display: flex;
+  flex-direction: row;
+}
+
+.block > div {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* text-align: center; */
+  margin: 0 10rem;
+}
+
+/* desktop size */
+@media (max-width: 1200px) and (min-width: 769px) {
+  .imgSize {
+    width: 75%;
+  }
+  .card1 {
+    padding: 0.5rem;
+  }
+  .card1 h1 {
+    font-size: 1rem;
+  }
+}
+
+/* tablet size */
+@media (max-width: 768px) and (min-width: 481px) {
+  .imgSize {
+    width: 70%;
+  }
+  .card1 {
+    margin: 10px;
+  }
+  .card1 h1 {
+    font-size: 1rem;
+  }
+  .card1 p {
+    font-size: 0.5rem;
+  }
+  .card1 h4 {
+    font-size: 0.5rem;
+  }
+  .card1 span {
+    font-size: 0.5rem;
+  }
+  .block > div {
+    margin: 0 1rem;
+  }
+}
+
+/* smart-phone */
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+  }
+  .card1,
+  .image1 {
+    flex: none; /* Remove flex property to make them stack in a column */
+    width: 50%;
+    margin: 2rem; /* Remove margin to stack them closely */
+  }
+  .card1 h1 {
+    font-size: 1.5rem;
+  }
+  .card1 p {
+    font-size: 1rem;
+  }
+  .card1 h4 {
+    font-size: 0.8rem;
+  }
+  .card1 span {
+    font-size: 0.7rem;
+  }
+  .block > div {
+    margin: 0 4rem;
+  }
+}

@@ -1,0 +1,101 @@
+.img0 {
+  margin-top: 2rem;
+  width: 100% !important;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+}
+
+.partypic {
+  display: flex;
+}
+
+.imageContainer2 {
+  flex: 1;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box; /* Add this to include padding and borders in the width calculation */
+}
+
+.imgs {
+  width: 100% !important;
+  display: block !important;
+}
+
+.blur {
+  width: 100% !important;
+  filter: blur(0.5rem) !important;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  width: 100%; /* Ensure the content takes the full width */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.btn {
+  background-color: rgb(245, 195, 63);
+  transition: background-color 4s ease-in-out; /*Add a smooth transition*/
+}
+
+.btn:hover {
+  background-color: rgb(6, 175, 6); /* Change background color on hover */
+}
+
+.h1Font {
+  font-size: 7rem;
+}
+
+.pFont {
+  font-size: 1.5rem;
+}
+
+/* desktop size */
+@media (max-width: 1200px) and (min-width: 769px) {
+  .h1Font {
+    font-size: 5rem;
+  }
+
+  .pFont {
+    font-size: 1.2rem;
+  }
+}
+
+/* tablet size */
+@media (max-width: 768px) and (min-width: 481px) {
+  .h1Font {
+    font-size: 3rem;
+  }
+
+  .pFont {
+    font-size: 0.6rem;
+  }
+  .content button {
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* smart-phone */
+@media (max-width: 480px) {
+  .h1Font {
+    font-size: 3rem;
+  }
+
+  .pFont {
+    font-size: 0.8rem;
+  }
+  .content button {
+    padding: 1rem 1rem;
+    font-size: 1.3rem;
+  }
+}

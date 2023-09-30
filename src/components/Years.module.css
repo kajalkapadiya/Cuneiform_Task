@@ -1,0 +1,103 @@
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.timeline_item:hover {
+  transform: translateY(-10px); /* Move the item up slightly on hover */
+}
+
+.timeline_item {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.year {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.line_image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.line {
+  width: 100px;
+  height: 2px;
+  background-color: #000;
+}
+
+.timeline_item:hover .line {
+  width: 120px; /* Increase the width of the line on hover */
+}
+
+.content {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.pSize {
+  padding: 0 5rem;
+}
+
+/* desktop size */
+@media (max-width: 1200px) and (min-width: 769px) {
+.year{
+  font-size: 15px;
+}
+.beerimg{
+  width: 20px;
+}
+.pSize{
+  padding: 0 4rem;
+}
+.line{
+  width: 60px;
+  height: 2px;
+}
+}
+
+/* tablet size */
+@media (max-width: 769px) and (min-width: 481px) {
+  .year{
+    font-size: 9px;
+  }
+  .beerimg{
+    width: 12px;
+  }
+  .pSize{
+    padding: 0 1rem;
+    font-size: 1.5rem;
+  }
+  .line{
+    width: 45px;
+    height: 2px;
+  }
+}
+
+/* smart-phone */
+@media (max-width: 480px) {
+  .year{
+    font-size: 7px;
+  }
+  .beerimg{
+    width: 9px;
+  }
+  .pSize{
+    padding: 0 1rem;
+    font-size: 1.2rem;
+  }
+  .line{
+    width: 20px;
+    height: 1px;
+  }
+}

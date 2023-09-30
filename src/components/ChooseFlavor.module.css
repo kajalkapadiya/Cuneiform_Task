@@ -1,0 +1,101 @@
+.container {
+  display: flex;
+  padding: 2rem;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-wrap: wrap;
+  opacity: 0; /* Initially set the opacity to 0 */
+  animation: fadeIn 2s ease-in-out forwards; /* Apply the fade-in animation */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1; /* Fade in to full opacity */
+  }
+}
+
+.image7 {
+  flex: 1;
+  text-align: center;
+}
+
+.contents {
+  flex: 1;
+  justify-content: center;
+}
+
+.contents h1 {
+  margin-bottom: 2rem;
+}
+
+.contents p {
+  margin-top: 2.5rem;
+}
+
+.btn {
+  background-color: rgb(245, 195, 63);
+  margin-top: 3.5rem;
+}
+
+.h1Font{
+  font-size: 4rem;
+}
+
+/* desktop size */
+@media(max-width: 1200px) and (min-width: 769px){
+  .image7 img{
+    width: 70%;
+   }
+   .h1Font{
+    font-size: 3.9rem;
+   }
+   .contents p {
+    font-size: 0.9rem;
+  }
+  .btn {
+    margin-top: 3.4rem;
+    font-size: 1.5rem;
+  }
+}
+
+/* tablet size */
+@media (max-width: 768px) and (min-width: 481px) {
+  .image7 img{
+    width: 90%;
+   }
+   .h1Font{
+    font-size: 3.2rem;
+   }
+   .contents p {
+    font-size: 0.6rem;
+  }
+  .btn {
+    margin-top: 1rem;
+    padding: 9px;
+    font-size: 7px;
+  }
+}
+
+/* smart-phone */
+@media (max-width: 480px) {
+  .h1Font{
+    font-size: 3rem;
+   }
+   .contents strong{
+    font-size: 1rem;
+   }
+   .contents p {
+    font-size: 0.7rem;
+  }
+  .image7 img{
+    width: 70%;
+   }
+   .btn {
+    margin-top: 1rem;
+    padding: 5px;
+    font-size: 5px;
+  }
+}

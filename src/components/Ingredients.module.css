@@ -1,0 +1,134 @@
+.container {
+  margin-top: 3.5rem;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-size: 3.6rem;
+  margin: 0;
+}
+
+.card2 {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  margin-right: 8rem;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.image1 {
+  flex: 1;
+  text-align: center;
+}
+
+.contents {
+  flex: 1;
+  text-align: left;
+  padding: 7rem;
+}
+
+.card3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  margin: 0;
+}
+
+.par0 {
+  font-size: 2rem;
+  padding-left: 0.5rem;
+}
+
+.card2 .content {
+  opacity: 0;
+  transform: translateY(30px); /* Initially, move elements down by 30px */
+  animation: slideIn 0.5s ease-in-out forwards;
+}
+
+/* Apply different delays to each .content element for a staggered effect */
+.card2 .content:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.card2 .content:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.card2 .content:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* desktop size */
+@media(max-width: 1200px) and (min-width: 769px){
+ .par0{
+  font-size: 1.2rem;
+ }
+ .upperImg{
+  width: 90%;
+ }
+ .image1 img{
+  width: 70%;
+ }
+ .title{
+  font-size: 2.5rem;
+ }
+}
+
+/* tablet size */
+@media (max-width: 768px) and (min-width: 481px) {
+  .par0{
+    font-size: 0.7rem;
+   }
+   .upperImg{
+    width: 87%;
+   }
+   .image1 img{
+    width: 65%;
+   }
+   .title{
+    font-size: 2rem;
+   }
+   .contents{
+    padding: 0;
+   }
+}
+
+/* smart-phone */
+@media (max-width: 480px) {
+  .par0{
+    font-size: 0.9rem;
+   }
+   .upperImg{
+    width: 40%;
+   }
+   .image1 img{
+    width: 60%;
+   }
+   .title{
+    font-size: 1.5rem;
+   }
+}
